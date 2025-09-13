@@ -1,4 +1,43 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header > .hidden {
+  display: none;
+}
+header > .active {
+  display: flex;
+}
+header {
+  height: 10vh;
+}
+nav#hamburger {
+  justify-content: center;
+  gap: 10px;
+  height: 100%;
+  align-items: center;
+}
+header  button {
+  padding: 10px;
+}
+.hamburger-nav {
+  height: 100%;
+  align-items: center;
+  justify-content: start;
+  padding-left: 5%;
+  font-size: 2rem;
+}
+#sidebar-nav {
+  width: 70vw;
+  flex-direction: column;
   background-color: black;
-  color: white;
+  justify-content: start;
+  align-items: center;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 1;
+  height: 100vh;
 }
